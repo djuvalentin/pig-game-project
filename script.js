@@ -1,4 +1,4 @@
-import getDicePath from './diceLoader.js';
+import diceGenerator from './diceGenerator.js';
 
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
@@ -42,7 +42,7 @@ const updateCurrentScoreDOM = function (activePlayer) {
 };
 
 const generateDiceDOM = function (number) {
-  diceEl.src = getDicePath(number);
+  diceEl.src = diceGenerator(number);
 };
 
 const highlighActivePlayerDOM = function () {

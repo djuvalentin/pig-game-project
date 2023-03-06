@@ -14,7 +14,7 @@ const dice = {
   roll6,
 };
 
-export default getDicePath = function (diceNumber) {
+export default function (diceNumber) {
   const path = dice[`roll${diceNumber}`];
   return path;
-};
+}
